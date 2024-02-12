@@ -5,7 +5,6 @@ const Homepage = () => {
     return (
         <>
             <Header />
-            homepage
             <Outlet />
         </>
     )
