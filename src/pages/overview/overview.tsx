@@ -4,7 +4,7 @@ import OvView from "@/pages/overview/ov-view";
 
 const Overview = () => {
     return (
-        <Flex align="flex-start" justify="space-evenly">
+        <Flex align="flex-start" justify="center">
             <OvMap />
             <OvView />
         </Flex>

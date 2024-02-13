@@ -4,8 +4,10 @@ import View from 'ol/View';
 import { XYZ } from 'ol/source';
 import TileLayer from 'ol/layer/Tile';
 import { fromLonLat } from 'ol/proj';
+//! Test
+import OSM from 'ol/source/OSM';
 
-// import 'ol/ol.css';
+import 'ol/ol.css';
 import styles from '@/pages/overview/overview.module.css'
 
 const mapInfo = [
@@ -30,8 +32,13 @@ export default function OvMap() {
             controls: [],
             target: mapRef.current!,
             layers: [
+                // new TileLayer({
+                //     source: source,
+                //     extent: item.extent,
+                // })
+                //! Test
                 new TileLayer({
-                    source: source,
+                    source: new OSM(),
                     extent: item.extent,
                 })
             ],
@@ -46,6 +53,7 @@ export default function OvMap() {
     }, []);
 
     return (
+        //! 找公司获取权限
         <div ref={mapRef} className={styles.MapContainer} />
     );
 }
