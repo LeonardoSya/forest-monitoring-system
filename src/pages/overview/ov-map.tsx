@@ -4,6 +4,7 @@ import View from 'ol/View';
 import { XYZ } from 'ol/source';
 import TileLayer from 'ol/layer/Tile';
 import { fromLonLat } from 'ol/proj';
+import {Zoom, Rotate,Attribution,ScaleLine,OverviewMap} from 'ol/control';
 //! Test
 import OSM from 'ol/source/OSM';
 
@@ -29,7 +30,13 @@ export default function OvMap() {
         });
 
         const map = new Map({
-            controls: [],
+            controls: [
+                new Zoom(),
+                new Rotate(),
+                new Attribution(),
+                new ScaleLine(),
+                new OverviewMap(),
+            ],
             target: mapRef.current!,
             layers: [
                 // new TileLayer({

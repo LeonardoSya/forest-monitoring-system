@@ -1,6 +1,7 @@
 import { Flex, Space, Typography, Tooltip, Button, Avatar, Badge } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import styles from './home.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -14,13 +15,25 @@ export default function Header() {
             </Space>
             <Space className={styles.margin} wrap>
                 <Tooltip title="Overview">
-                    <Button>区域概况</Button>
+                    <Button>
+                        <Link to={`/`}>
+                            区域概况
+                        </Link>
+                    </Button>
                 </Tooltip>
                 <Tooltip title="Map">
-                    <Button>林草地图</Button>
+                    <Button>
+                        <Link to={`map`}>
+                            林草地图
+                        </Link>
+                    </Button>
                 </Tooltip>
                 <Tooltip title="Monitor">
-                    <Button>森林资源</Button>
+                    <Button>
+                        <Link to={`monitor`}>
+                            森林资源
+                        </Link>
+                    </Button>
                 </Tooltip>
                 <Badge dot>
                     <Avatar
