@@ -3,35 +3,38 @@
     height: 95vh;
 }
 
-.ViewerContainer {
+.viewContainer {
+    display: flex;
+    flex-wrap: wrap;
     width: 40vw;
     height: 100%;
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
-.Card1 {
+.card1 {
     height: 32vh;
     width: 40vw;
     margin-bottom: 2vh;
     overflow: hidden;
 }
 
-.Card2 {
+
+.card2 {
     height: 37vh;
     width: 19vw;
     margin-bottom: 1vh;
     overflow: hidden;
 }
 
-.Card3 {
+.card3 {
     height: 37vh;
-    width: 19vw;
-    margin-bottom: 1vh;
+    width: 20vw;
+    margin-bottom: 2vh;
     margin-left: 0.6vw;
     overflow: hidden;
 }
 
-.Card4 {
+.card4 {
     height: 16vh;
     width: 40vw;
     overflow: hidden;
