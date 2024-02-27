@@ -31,7 +31,7 @@ export default function Header() {
                 <Tooltip title="Monitor">
                     <Button>
                         <Link to={`monitor`}>
-                            森林资源
+                            森林监测
                         </Link>
                     </Button>
                 </Tooltip>
