@@ -1,0 +1,6 @@
+.sider {
+    position: absolute;
+    top: 7vh;
+    left: 1vw;
+    z-index: 99;
+}
